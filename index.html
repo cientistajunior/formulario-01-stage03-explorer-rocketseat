@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Criando Formulários</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="page">
+		<!--DIV principal-->
+		<header>
+			<!--cabeçalho-->
+			<h1>MENTORIA</h1>
+			<p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+		</header>
+		<form id="new-form">
+			<fieldset>
+				<div class="fieldset-wrapper-one">
+					<legend class="information-one">INFORMAÇÕES PESSOAIS</legend>
+
+					<div class="input-wrapper-nameAndLastName">
+						<div class="input-wrapper-name">
+							<label for="event-name">Nome:</label>
+							<input type="text" id="event-name" required/>
+						</div>
+
+						<div class="input-wrapper-lastname">
+							<label for="event-lastname">Sobrenome</label>
+							<input type="text" id="event-lastname" required>
+						</div>
+					</div>
+
+					<div class="input-wrapper-email">
+						<label for="event-email">Email <span>(digite um email válido)</span></label>
+						<input type="email" id="event-email" required/>
+					</div>
+
+					<div class="input-wrapper-password">
+						<label for="event-password">Senha <span>(mínimo de 8 caracteres)</span></label>
+						<input type="password" id="event-password" minlength="8" required/>
+					</div>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div class="fieldset-wrapper-two">
+					<legend class="information-two">Informações do mentor</legend>
+
+					<div class="input-wrapper-information">
+
+						<label for="event-information">Nome do seu mentor <span>(Só o primeiro nome)</span></label>
+						<input type="text" id="event-information" />
+
+					</div>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div class="fieldset-wrapper-three">
+					<legend class="available-time">Seus Horários disponíveis</legend>
+				</div>
+
+			</fieldset>
+
+			<fieldset>
+				<div class="fieldset-wrapper-four">
+					<legend class="first-mentorship">Primeira mentoria</legend>
+					<div class="input-wrapper-dateStartEnd">
+						<div class="input-wrapper-date">
+							<label for="event-date">DATA <span>(DD/MM/AAAA)</span></label>
+							<input type="date" id="event-date" required/>
+						</div>
+						<div class="input-wrapper-start">
+							<label for="event-start">Das</label>
+							<input type="time" id="event-start" required/>
+						</div>
+						<div class="input-wrapper-end">
+							<label for="event-end">Até</label>
+							<input type="time" id="event-end" required/>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div class="fieldset-wrapper-five">
+					<legend class="second-mentorship">Segunda mentoria</legend>
+					<div class="input-wrapper-dateStartEnd-2">
+						<div class="input-wrapper-date-2">
+							<label for="event-date-2">DATA <span>(DD/MM/AAAA)</span></label>
+							<input type="date" id="event-date-2" required/>
+						</div>
+						<div class="input-wrapper-start-2">
+							<label for="event-start-2">Das</label>
+							<input type="time" id="event-start-2" required/>
+						</div>
+						<div class="input-wrapper-end-2">
+							<label for="event-end-2">Até</label>
+							<input type="time" id="event-end-2" required/>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+		<footer>
+			<input class="button" type="submit" form="new-form" value="Salvar">
+		</footer>
+	</div>
+</body>
+
+</html>
